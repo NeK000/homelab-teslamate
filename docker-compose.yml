@@ -26,6 +26,7 @@ services:
       PORT: "${teslamate_port}"
     cap_drop:
       - all
+
   grafana:
     image: teslamate/grafana:latest
     container_name: teslamate-grafana
@@ -48,6 +49,7 @@ services:
       DATABASE_HOST: "${PG_HOST}"
       PUID: 472
       PGID: 472
+
   ABRP:
     container_name: TeslaMate_ABRP
     image: fetzu/teslamate-abrp:latest
