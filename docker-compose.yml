@@ -52,7 +52,7 @@ services:
 
   ABRP:
     container_name: TeslaMate_ABRP
-    image: fetzu/teslamate-abrp:3.2.0
+    image: fetzu/teslamate-abrp:3.3.0
     restart: always
     labels:
       net.unraid.docker.managed: "dockerman"
